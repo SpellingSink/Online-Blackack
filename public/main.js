@@ -7,7 +7,7 @@ function startgame()
 }
 socket.on('playercount',(playercount) => {
     document.getElementById('playercount').style.display="block"
-    document.getElementById('playercount').innerhtml = "There are " + playercount + " players connected!"
+    document.getElementById('playercount').innerHTML = "There are " + playercount + " players connected!"
 })
 socket.on('updateDeck',(decklength) => {
     document.getElementById('deckcount').innerHTML = decklength;
