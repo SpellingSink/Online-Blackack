@@ -194,6 +194,7 @@ io.on('connection', (socket) => {
   console.log('a user connected');
   playercount = playercount + 1
   console.log('there are ' + playercount + ' players connected')
+  io.emit('playercount',playercount)
   socket.on('start', () => {
     startgame()
   })
@@ -207,6 +208,7 @@ io.on('connection', (socket) => {
     console.log('user disconnected');
     playercount = playercount - 1;
     console.log('there are ' + playercount + ' players connected')
+    io.emit('playercount',playercount)
     var existingPlayerID = 0
     for (var i = 0; i < players.length; i++){
       if (players[i].ID = socket.id){
