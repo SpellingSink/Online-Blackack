@@ -16,6 +16,16 @@ padding: 5px 20px;
 margin: 0 auto;
 margin-top: 10px;
 }
+.playercount
+{
+display: none;
+background: gold;
+border: solid 5px white;
+border-radius: 10px;
+padding: 5px 20px;
+margin: 0 auto;
+margin-top: 10px;
+}
 .btn{
     border:none;
     padding: 15px 40px;
